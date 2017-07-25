@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Voos</title>
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+  </head>
+ <body>
+   <form class="form" action="" method="post">
+     <p class="register"> Voo </p>
+     <div class="row">
+       <div class="input-field col s8">
+         <input type="text" name="origem" id="origem" required>
+         <label for="origem">Origem</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s8">
+         <input type="text" name="destino" id="destino" required>
+         <label for="destino">Destino</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s4">
+         <input type="text" name="data_p" id="data_p" required>
+         <label for="data_p">Data Partida</label>
+       </div>
+       <div class="input-field col s4 input-field-ao-lado">
+         <input type="text" name="hora_p" id="hora_p" required>
+         <label for="hora_p">Hora Partida</label>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="input-field col s4">
+         <input type="text" name="data_c" id="data_c" required>
+         <label for="data_c">Data Chegada</label>
+       </div>
+       <div class="input-field col s4 input-field-ao-lado">
+         <input type="text" name="hora_c" id="hora_c" required>
+         <label for="hora_c">Hora Chegada</label>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="input-field col s8">
+         <select required>
+            <option value="" disabled selected>Escolha o Avião</option>
+            <option value="1">Gol 1993</option>
+            <option value="2">Latam 3223</option>
+            <option value="3">Tam 3278</option>
+          </select>
+          <label>Avião</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s8">
+         <select required>
+            <option value="" disabled selected>Escolha o Piloto</option>
+            <option value="1">Moisés</option>
+            <option value="2">Marcos</option>
+            <option value="3">Brito</option>
+          </select>
+          <label>Piloto</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col s6">
+         <input class="btn blue" type="submit" value="cadastrar">
+       </div>
+       <div class="col s6">
+         <input class="btn blue" type="reset" value="limpar">
+       </div>
+     </div>
+   </form>
+
+   <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+   <script type="text/javascript" src="../js/materialize.js"></script>
+   <script type="text/javascript" src="../js/form_js.js"></script>
+ </body>
+</html>

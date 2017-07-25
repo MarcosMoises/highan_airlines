@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+  </head>
+  <body>
+    <form class="form" action="" method="post">
+      <p class="register"> Funcionario </p>
+      <div class="row">
+        <div class="input-field col s8">
+          <input type="text" name="nome" id="nome">
+          <label for="nome">Nome</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input type="text" name="cpf" id="cpf">
+          <label for="cpf">CPF</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input type="text" name="rg" id="rg">
+          <label for="rg">RG</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input type="password" name="senha" id="senha">
+          <label for="senha">Senha</label>
+        </div>
+        <div class="input-field col s4 input-field-senha-confirmar">
+          <input type="password" name="senha_confirmar" id="senha_confirmar">
+          <label for="senha_confirmar">Confirmar a senha</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input type="text" name="nascimento" id="nascimento" class="datepicker"/>
+          <label for="nascimento">Data de nascimento</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input type="text" name="endereco" id="endereco">
+          <label for="endereco">Endereco</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input type="text" name="telefone" id="telefone">
+          <label for="telefone">Telefone</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6">
+          <input class="btn blue" type="submit" value="cadastrar">
+        </div>
+        <div class="col s6">
+          <input class="btn blue" type="reset" value="limpar">
+        </div>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="../js/form_js.js"></script>
+
+  </body>
+</html>
