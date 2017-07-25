@@ -5,14 +5,41 @@
  *
  * Made By MaterializeCSS.com
  */
+@font-face {
+    font-family: bellefair;
+    src: url(../fonts/Bellefair-Regular.ttf);
+}
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: rgb(37, 48, 80);
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-p {
-  line-height: 2rem;
+.gray-text-hg{
+  color: #424242;
+}
+
+#logo{
+  width: 120px;
+  height: 63px;
+  vertical-align: middle;
+}
+
+.about-btn{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid rgb(37, 48, 80);
+    color: rgb(37, 48, 80);
+}
+
+.about-btn:hover{
+  background-color: rgba(37, 48, 80, 0.78);
+}
+
+.msgs{
+  margin-top: 5%;
 }
 
 .button-collapse {
