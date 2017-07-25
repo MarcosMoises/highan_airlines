@@ -15,10 +15,9 @@
 </head>
 <body>
   <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" class="brand-logo"> <img src="../imgs/airplane.png" id="logo"/> Highan - Airplanes </a>
+    <div class="nav-wrapper">
+      <a id="logo-container" class="brand-logo left"> <img src="../imgs/airplane.png" id="logo"/> Highan - Airplanes </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="http://materializecss.com/templates/parallax-template/preview.html#">Navbar Link</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
@@ -47,39 +46,107 @@
   </div>
 
 
-  <div class="container">
-    <div class="section">
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+  <div class="section">
+    <div class="row col s12">
+      <div class="col s4">
+        <div id="login-container">
+          <form class="form white-text" action="" method="post">
+            <p style="font-family: bellefair; font-size: 30px; color: white; font-weight: bolder;" class="center"> Efetuar Login </p>
+            <div class="row">
+              <div class="input-field col s8 push-s2">
+                <input type="text" name="cpf" id="cpf" required>
+                <label for="cpf">CPF</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s8 push-s2">
+                <input type="password" name="senha" id="senha" required>
+                <label for="senha">Senha</label>
+              </div>
+            </div>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+            <div class="row">
+              <div class="col s8 push-s2">
+                <p>
+                  <input type="checkbox" id="mnt-logado" />
+                  <label for="mnt-logado">Mantenha-me logado</label>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s8 push-s2">
+                <input class="btn blue col s12" type="submit" value="Logar">
+              </div>
+            </div>
+          </form>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+      </div>
+      <div class="col s8">
+        <div class="search-flight">
+          <div class="row">
+            <div class="input-field col s4">
+              <select>
+                <option value="" disabled selected>Choose your location</option>
+              </select>
+              <label>Origin</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="" disabled selected>Choose your destiny</option>
+              </select>
+              <label>Destiny</label>
+            </div>
           </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+          <div class="row col s12">
+            <div class="col s4">
+              <p>
+                <input name="group_rd" type="radio" id="id-vt" />
+                <label for="id-vt">Ida e Volta</label>
+              </p>
+            </div>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <div class="col s4">
+              <p>
+                <input name="group_rd" type="radio" id="sm-ida" />
+                <label for="sm-ida">Somente Ida</label>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <input type="text" name="dt-ida" id="dt-ida" class="datepicker" value="">
+              <label for="dt-ida">Ida</label>
+            </div>
+            <div class="input-field col s4">
+              <input type="text" name="dt-volta" id="dt-volta" class="datepicker" value="">
+              <label for="dt-volta">Volta</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s4">
+              <input type="text" name="passageiros" value="">
+              <label>Passageiros</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="" disabled selected>Choose the class</option>
+              </select>
+              <label>Class</label>
+            </div>
+          </div>
+
+          <div class="row col s6">
+            <div class="input-field col s8 center-align">
+              <input type="button" class="btn waves-light white" name="btn-search" id="btn-search" value="Procure seu voo">
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -100,7 +167,7 @@
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h3><i class="mdi-content-send blue-text"></i></h3>
           <h4>Contact Us</h4>
           <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
@@ -152,7 +219,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com/">Materialize</a>
+      Made by <a class="blue-text text-lighten-3" href="http://materializecss.com/">Materialize</a>
       </div>
     </div>
   </footer>
