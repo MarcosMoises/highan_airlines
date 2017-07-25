@@ -76,6 +76,51 @@ label {
   color: white !important;
 }
 
+.offer-circle{
+  width: 150px;
+  height: 150px;
+  font-weight: bolder;
+  border-radius: 75px;
+  font-family: bellefair;
+  color: black;
+}
+
+.offer-circle img{
+  width: 96px;
+  height: 96px;
+}
+.gradient-purple{
+  background: purple; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, rgb(182, 55, 108), rgb(203, 20, 91), rgb(213, 33, 98)); /* Safari */
+  background: -o-radial-gradient(circle, rgb(182, 55, 108), rgb(203, 20, 91), rgb(213, 33, 98)); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, rgb(182, 55, 108), rgb(203, 20, 91), rgb(213, 33, 98)); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, rgb(182, 55, 108), rgb(203, 20, 91), rgb(213, 33, 98)); /* Standard syntax */
+}
+
+.gradient-orange{
+  background: orange; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, rgb(179, 102, 53), rgb(217, 114, 40), rgb(236, 139, 11)); /* Safari */
+  background: -o-radial-gradient(circle, rgb(179, 102, 53), rgb(217, 114, 40), rgb(236, 139, 11)); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, rgb(179, 102, 53), rgb(217, 114, 40), rgb(236, 139, 11)); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, rgb(179, 102, 53), rgb(217, 114, 40), rgb(236, 139, 11)); /* Standard syntax */
+}
+
+.gradient-green{
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, rgb(101, 154, 72), rgb(84, 134, 70), rgb(67, 120, 58)); /* Safari */
+  background: -o-radial-gradient(circle, rgb(101, 154, 72), rgb(84, 134, 70), rgb(67, 120, 58)); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, rgb(101, 154, 72), rgb(84, 134, 70), rgb(67, 120, 58)); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, rgb(101, 154, 72), rgb(84, 134, 70), rgb(67, 120, 58)); /* Standard syntax */
+}
+
+.gradient-blue{
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, rgb(67, 99, 161), rgb(49, 77, 162), rgb(36, 59, 140)); /* Safari */
+  background: -o-radial-gradient(circle, rgb(67, 99, 161), rgb(49, 77, 162), rgb(36, 59, 140)); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, rgb(67, 99, 161), rgb(49, 77, 162), rgb(36, 59, 140)); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, rgb(67, 99, 161), rgb(49, 77, 162), rgb(36, 59, 140)); /* Standard syntax */
+}
+
 .button-collapse {
   color: #26a69a;
 }
