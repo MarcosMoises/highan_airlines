@@ -16,7 +16,7 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper">
-      <a id="logo-container" class="brand-logo left"> <img src="../imgs/airplane.png" id="logo"/> Highan - Airplanes </a>
+      <a id="logo-container" class="brand-logo left"> <img src="../imgs/airplane.png" id="logo"/> Highan - Airlines </a>
       <ul class="right hide-on-med-and-down">
       </ul>
 
@@ -47,9 +47,9 @@
 
 
 
-  <div class="section">
+  <div class="section" style="background-color: rgb(194, 221, 231)">
     <div class="row col s12">
-      <div class="col s4">
+      <div class="col s4 push-s1">
         <div id="login-container">
           <form class="form white-text" action="" method="post">
             <p style="font-family: bellefair; font-size: 30px; color: white; font-weight: bolder;" class="center"> Efetuar Login </p>
@@ -77,26 +77,26 @@
 
             <div class="row">
               <div class="col s8 push-s2">
-                <input class="btn blue col s12" type="submit" value="Logar">
+                <input class="btn col s12" type="submit" value="Logar" id="logar-btn">
               </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="col s8">
-        <div class="search-flight">
+      <div class="col s8 push-s1">
+        <div id="search-flight">
           <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s5">
               <select>
-                <option value="" disabled selected>Choose your location</option>
+                <option value="" disabled selected>Escolha o local de origem</option>
               </select>
-              <label>Origin</label>
+              <label>Origem</label>
             </div>
-            <div class="input-field col s4">
+            <div class="input-field col s5">
               <select>
-                <option value="" disabled selected>Choose your destiny</option>
+                <option value="" disabled selected>Escolha o  destino</option>
               </select>
-              <label>Destiny</label>
+              <label>Destino</label>
             </div>
           </div>
 
@@ -117,31 +117,31 @@
           </div>
 
           <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s5">
               <input type="text" name="dt-ida" id="dt-ida" class="datepicker" value="">
               <label for="dt-ida">Ida</label>
             </div>
-            <div class="input-field col s4">
+            <div class="input-field col s5">
               <input type="text" name="dt-volta" id="dt-volta" class="datepicker" value="">
               <label for="dt-volta">Volta</label>
             </div>
           </div>
 
           <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s5">
               <input type="text" name="passageiros" value="">
               <label>Passageiros</label>
             </div>
-            <div class="input-field col s4">
+            <div class="input-field col s5">
               <select>
-                <option value="" disabled selected>Choose the class</option>
+                <option value="" disabled selected>Escolha a classe</option>
               </select>
-              <label>Class</label>
+              <label>Classe</label>
             </div>
           </div>
 
-          <div class="row col s6">
-            <div class="input-field col s8 center-align">
+          <div class="row col s12">
+            <div class="input-field col s10 center-align">
               <input type="button" class="btn waves-light white" name="btn-search" id="btn-search" value="Procure seu voo">
             </div>
           </div>

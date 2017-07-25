@@ -27,10 +27,9 @@ nav .brand-logo {
   vertical-align: middle;
 }
 
-.about-btn, #btn-search{
+.about-btn, #btn-search, #logar-btn{
     background-color: transparent;
-    border-radius: 25px;e
-    border: 1px solid rgb(37, 48, 80);
+    border-radius: 25px;
     color: rgb(37, 48, 80);
     font-weight: bolder;
     box-shadow: 1px 1px 1px 1px rgb(74, 98, 92);
@@ -55,6 +54,26 @@ nav .brand-logo {
   width: 80%;
   height: 450px;
   float: left;
+}
+
+#search-flight{
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(45, 84, 224, 0.91), rgba(57, 89, 182, 0.57)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(45, 84, 224, 0.91), rgba(57, 89, 182, 0.57)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(45, 84, 224, 0.91), rgba(57, 89, 182, 0.57)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(45, 84, 224, 0.91), rgba(57, 89, 182, 0.57)); /* Standard syntax */
+
+  height: 450px;
+  color: white !important;
+  border-radius: 5px;
+  padding-left: 10%;
+  padding-top: 2%;
+  width: 75%;
+}
+
+label {
+  font-size: 0.8rem;
+  color: white !important;
 }
 
 .button-collapse {
