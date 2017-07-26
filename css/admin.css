@@ -1,0 +1,49 @@
+.sidenav{
+  width: 25%;
+  height: auto;
+  background-color: white;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: rgb(37, 48, 80);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.user-view{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(197, 196, 217, 0.41);
+}
+
+.user-profile{
+  width: 90%;
+  height: 80px;
+  margin-top: 10%;
+}
+
+.name, .email{
+  font-family: bellefair;
+  font-size: 16px;
+  font-weight: bolder;
+  height: 30px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.item-sidenav{
+    width: 100%;
+    vertical-align: middle;
+    color: blue;
+    text-transform: capitalize;
+    padding: 5px;
+    height: 50px;
+    background-color: rgba(49, 46, 190, 0.41);
+}
+
+#logo{
+  width: 120px;
+  height: 63px;
+  vertical-align: middle;
+}
