@@ -1,0 +1,178 @@
+
+<button class="model-circle-cad #1a237e indigo darken-4 valign-wrapper left" id="flight"><i class="material-icons white-text">trending_up</i>Voos</button>
+<button class="model-circle-cad #283593 indigo darken-3 valign-wrapper left" id="airplane"><i class="material-icons white-text">flight_takeoff</i>Aeronaves</button>
+<button class="model-circle-cad #3949ab indigo darken-1 valign-wrapper left" id="worker"><i class="material-icons white-text">account_circle</i>Funcionários</button>
+<button class="model-circle-cad #3f51b5 indigo valign-wrapper left" id="function"><i class="material-icons white-text">chrome_reader_mode</i>Funções</button>
+
+<!-- FORMULÁRIO PARA CADASTRO DE VOOS -->
+
+<form class="form" id="voos" style="display:block;">
+
+  <div><p class="msg"> Voo </p></div>
+
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" name="origem" id="origem" required>
+      <label for="origem">Origem</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="text" name="destino" id="destino" required>
+      <label for="destino">Destino</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s3">
+      <input type="text" name="data_p" id="data_p" required>
+      <label for="data_p">Data Partida</label>
+    </div>
+
+    <div class="input-field col s3 input-field-ao-lado">
+      <input type="text" name="hora_p" id="hora_p" required>
+      <label for="hora_p">Hora Partida</label>
+    </div>
+
+    <div class="input-field col s3">
+      <input type="text" name="data_c" id="data_c" required>
+      <label for="data_c">Data Chegada</label>
+    </div>
+
+    <div class="input-field col s3 input-field-ao-lado">
+      <input type="text" name="hora_c" id="hora_c" required>
+      <label for="hora_c">Hora Chegada</label>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="input-field col s6">
+      <select required>
+         <option value="" disabled selected>Escolha o Avião</option>
+         <option value="1">Gol 1993</option>
+         <option value="2">Latam 3223</option>
+         <option value="3">Tam 3278</option>
+       </select>
+       <label>Avião</label>
+    </div>
+    <div class="input-field col s6">
+      <select required>
+         <option value="" disabled selected>Escolha o Piloto</option>
+         <option value="1">Moisés</option>
+         <option value="2">Marcos</option>
+         <option value="3">Brito</option>
+       </select>
+       <label>Piloto</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s3">
+      <input class="btn circle-button" type="submit" value="cadastrar">
+    </div>
+    <div class="col s3">
+      <input class="btn circle-button" type="reset" value="limpar">
+    </div>
+  </div>
+</form>
+
+<!-- FORMULÁRIO PARA CADASTRO DE AERONAVES -->
+<form class="form" id="aeronaves" style="display:none;">
+  <div><p class="msg"> Aeronave </p></div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" name="marca" id="marca" required>
+      <label for="marca">Marca</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="text" name="modelo" id="modelo" required>
+      <label for="modelo">Modelo</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input id="descricao" type="text" name="descricao" id="descricao" required/>
+      <label for="descricao">Descrição</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="number" name="assentos" id="assentos"  required>
+      <label for="assentos">Total de assentos</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s3">
+      <input class="btn circle-button" type="submit" value="cadastrar">
+    </div>
+    <div class="col s3">
+      <input class="btn circle-button" type="reset" value="limpar">
+    </div>
+  </div>
+</form>
+
+<!-- FORMULÁRIO PARA CADASTRO DE FUNCIONÁRIOS -->
+
+<form class="form" id="funcionarios" style="display:none;">
+  <div><p class="msg"> Funcionário </p></div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" name="cpf" id="cpf"/>
+      <label for="nascimento">CPF</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="text" name="cargo" id="cargo"/>
+      <label for="endereco">Cargo</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s3">
+      <input class="btn circle-button" type="submit" value="cadastrar">
+    </div>
+    <div class="col s3">
+      <input class="btn circle-button" type="reset" value="limpar">
+    </div>
+  </div>
+</form>
+
+<!-- FORMULÁRIO PARA CADASTRO DE FUNÇÕES -->
+<form class="form" id="funcoes" style="display:none;">
+  <div><p class="msg"> Função </p></div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" name="nome" id="nome" required>
+      <label for="nome">Nome</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="number" name="salario" id="salario" required>
+      <label for="salario">Salario</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s5">
+      <select required>
+         <option value="" disabled selected>Escolha o Local de Trabalho</option>
+         <option value="1">Ambiente urbano</option>
+         <option value="2">Voos internacionais</option>
+         <option value="3">Ambiente interno aeronave</option>
+       </select>
+       <label>Local Trabalho</label>
+    </div>
+    <div class="input-field col s7">
+      <input id="descricao" type="text" class="materialize-textarea"/>
+      <label for="descricao">Descrição</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s3">
+      <input class="btn circle-button" type="submit" value="cadastrar">
+    </div>
+    <div class="col s3">
+      <input class="btn circle-button" type="reset" value="limpar">
+    </div>
+  </div>
+</form>
+
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../js/materialize.js"></script>
+<script type="text/javascript" src="../js/area_cad.js"></script>

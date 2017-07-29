@@ -11,42 +11,70 @@
     <link href="../css/icon" rel="stylesheet">
     <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="../css/admin.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="../css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
   <body>
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper">
-        <a id="logo-container" class="brand-logo left"> <img src="../imgs/airplane.png" id="logo"/> Highan - Airlines </a>
-        <ul class="right hide-on-med-and-down">
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-          <li><a href="http://materializecss.com/templates/parallax-template/preview.html#">Navbar Link</a></li>
-        </ul>
-        <a href="http://materializecss.com/templates/parallax-template/preview.html#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
+    <nav role="navigation">
     </nav>
 
-    <div class="sidenav z-depth-2">
+    <div class="sidenav">
+      <div class="row">
+        <a href="#" class="brand-logo left valign-wrapper"> <i class="material-icons">airplanemode_active</i> Highan - Airlines </a>
+      </div>
       <ul>
         <li>
           <div class="user-view">
             <div class="row col s12">
-              <div class="col s4" style="vertical-align: middle">
+              <div class="col s5" style="vertical-align: middle">
                 <a href="#!user"><img class="user-profile circle" src="../imgs/profile.png"></a>
               </div>
-              <div class="col s8" style="height: 100px">
-                <a href="#!name"><span class="blue-text name">John Doe</span></a><br>
-                <a href="#!email"><span class="blue-text email">jdandturk@gmail.com</span></a>
+              <div class="col s7" style="height: 100px">
+                <a href="#!name"><span class="name">John Doe</span></a><br>
               </div>
             </div>
           </div>
         </li>
 
-        <a href="#"><li class="item-sidenav"><i class="material-icons">cloud</i>Área de Cadastro</li></a>
+        <a href="#cad"><li class="item-sidenav valign-wrapper" id="cad"><i class="material-icons">assignment</i>Área de Cadastro</li></a>
+        <a href="#inf"><li class="item-sidenav valign-wrapper" id="inf"><i class="material-icons">data_usage</i>Informações</li></a>
+        <a href="#new"><li class="item-sidenav valign-wrapper" id="new"><i class="material-icons">supervisor_account</i> Novos Usuários</li></a>
 
       </ul>
-
     </div>
+
+    <div class="content">
+    </div>
+
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        var way = window.location.href;
+        var piece = way.slice(54, 57);
+
+        if(piece==0){
+          $(".content").load("admin_inicial.html");
+        }else if(piece=="#"){
+          $(location).prop('href', 'http://localhost/highan_airlines/templates/admin.html#')
+        }
+
+        $("#cad").click(function (){
+          $(".content").load("area_cad.html");
+        });
+
+        $("#inf").click(function (){
+          $(".content").load("area_info.html");
+        });
+
+        $("#new").click(function (){
+          $(".content").load("new_users.html");
+        });
+
+      });
+    </script>
+    <script src="../js/perfect-scrollbar.js"></script>
+    <script src="../js/chart-2.4.0.min.js"></script>
+    <script src="../js/admin.js"></script>
+
 
   </body>
 </html>
