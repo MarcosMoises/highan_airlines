@@ -42,6 +42,26 @@ nav{
   background: linear-gradient(to right, rgb(37, 48, 80) , rgb(43, 60, 111)); /* Standard syntax */
 }
 
+}
+
+.content{
+  width: 82%;
+  margin-left: 18%;
+  height: 500px;
+  margin-top: 64px;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  z-index: 7;
+  background: rgb(37, 48, 80); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgb(37, 48, 80) , rgb(43, 60, 111)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgb(37, 48, 80), rgb(43, 60, 111)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgb(37, 48, 80), rgb(43, 60, 111)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgb(37, 48, 80) , rgb(43, 60, 111)); /* Standard syntax */
+}
+
 .brand-logo {
   color: rgb(17, 19, 23);
   font-size: 20px;
@@ -72,7 +92,6 @@ nav{
   margin-top: 15%;
   position: absolute;
   color: #EADEDE;
-
 }
 
 .item-sidenav{
@@ -83,8 +102,17 @@ nav{
   padding: 5px;
   font-size: 14px;
   height: 40px;
+  text-transform: uppercase;
+  font-family: NotoSerif;
+  padding: 5px;
+  font-size: 13px;
+  height: 50px;
   font-weight: bold;
   margin-top: 5%;
+}
+
+.item-sidenav i{
+  vertical-align: middle;
 }
 
 .item-sidenav:hover{

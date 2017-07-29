@@ -68,13 +68,17 @@
         $("#new").click(function (){
           $(".content").load("new_users.html");
         });
+        $(function(){
+          var way = document.URL;
+          var piece = way.slice(56, 59);
 
-      });
+            $(".content").load("templates/admin_inicial.html");
+
+        });
     </script>
     <script src="../js/perfect-scrollbar.js"></script>
     <script src="../js/chart-2.4.0.min.js"></script>
     <script src="../js/admin.js"></script>
-
 
   </body>
 </html>
