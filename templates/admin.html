@@ -58,7 +58,9 @@
         }
 
         $("#cad").click(function (){
-          $(".content").load("area_cad.html");
+          $.get("area_cad.html", function (data) {
+              $(".content").append(data);
+          });
         });
 
         $("#inf").click(function (){
@@ -75,6 +77,7 @@
             $(".content").load("templates/admin_inicial.html");
 
         });
+      });
     </script>
     <script src="../js/perfect-scrollbar.js"></script>
     <script src="../js/chart-2.4.0.min.js"></script>
