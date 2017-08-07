@@ -8,12 +8,16 @@ $('#dt-ida, #dt-volta, #nascimento, #data_p, #data_c').pickadate({
 });
 
 (function($){
-  $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-    $('select').material_select();
-    $("#cpf").mask("999.999.999-99");
-
-  }); // end of document ready
+  $('.button-collapse').sideNav();
+  $('.parallax').parallax();
+  $('select').material_select();
+  $("#cpf").mask("999.999.999-99");
 })(jQuery); // end of jQuery name space
+
+
+$("#sm-ida").click(function (){
+  $(".dt-volta").hide();
+});
+$("#id-vt").click(function (){
+  $(".dt-volta").show();
+});

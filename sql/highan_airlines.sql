@@ -12,14 +12,15 @@ CREATE TABLE usuario (
 	email VARCHAR(255) NOT NULL,
 	data_nascimento DATE NOT NULL,
 	rg VARCHAR(255) NOT NULL,
-	nome_completo VARCHAR(255),
-	is_func BOOLEAN
+	nome_completo VARCHAR(255)
 );
 
-CREATE TABLE funcionario (
+CREATE TABLE funcao (
+	id_func INTEGER NOT NULL,
 	local_trabalho VARCHAR(255) NOT NULL,
 	id_usuario INTEGER NOT NULL,
-	funcao VARCHAR(255),
+	nome VARCHAR(255),
+	salario REAL NOT NULL,
 	FOREIGN KEY(id_usuario) REFERENCES usuario(id)
 );
 
